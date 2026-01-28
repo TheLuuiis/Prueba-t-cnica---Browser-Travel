@@ -29,7 +29,7 @@ body {
 }
 
 .results h1 {
-    color: #141b4d;
+    color: #1a1a1a;
     font-size: 46px;
     font-weight: 700;
     text-align: start;
@@ -71,7 +71,7 @@ body {
 }
 
 .tittle-vehicle h3 {
-    color: #141b4d;
+    color: #1a1a1a;
     font-size: 20.8px;
     font-weight: 700;
     text-align: start;
@@ -79,7 +79,7 @@ body {
 }
 
 .tittle-vehicle p {
-    color: #20293D;
+    color: #1a1a1a;
     font-size: 11.57px;
     font-weight: 500;
     text-align: start;
@@ -125,11 +125,12 @@ body {
 }
 
 .total-price p {
-    color: #141b4d;
+    color: #1a1a1a;
     font-size: 20.8px;
     font-weight: 700;
     text-align: end;
     text-transform: uppercase;
+    
 }
 
 .fee-day {
@@ -146,14 +147,265 @@ body {
     font-weight: 600;
     text-align: center;
     color: #fff;
-    background-color: #6c42f9;
+    background-color: #00d659;
     transition: .3s ease-in-out;
     border: 1px solid transparent;
     border-radius: .5rem;
 }
 
 .container-count button:hover {
-    color: #6c42f9;
+    color: #00d659;
     background-color: transparent;
-    border: 1px solid #6c42f9;
+    border: 1px solid #00d659;
 }
+
+@media (max-width: 1900px) {
+  .results {
+    width: min(66.8rem, calc(100% - 32px));
+  }
+}
+
+@media (max-width: 1400px) {
+  .results {
+    padding: 90px 0;
+    gap: 44px;
+  }
+
+  .results h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .results {
+    padding: 80px 0;
+    gap: 38px;
+  }
+
+  .results h1 {
+    font-size: 38px;
+  }
+
+  .description-vehicle {
+    width: 100%;
+  }
+
+  .container-img {
+    width: 280px;
+  }
+
+  .container-img img {
+    height: 145px;
+  }
+}
+
+@media (max-width: 992px) {
+  .results {
+    width: calc(100% - 28px);
+    padding: 70px 0;
+    gap: 32px;
+  }
+
+  .results h1 {
+    font-size: 34px;
+  }
+
+  .container-vehicle {
+    gap: 24px;
+  }
+
+  .vehicle {
+    height: auto;
+    gap: 14px;
+  }
+
+  .description-vehicle {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .container-img {
+    width: 240px;
+    height: auto;
+  }
+
+  .container-img img {
+    height: 132px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .tittle-vehicle {
+    width: auto;
+  }
+
+  .tittle-vehicle h3 {
+    font-size: 19px;
+  }
+
+  .total-price p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .results {
+    width: calc(100% - 24px);
+    padding: 60px 0;
+    gap: 26px;
+  }
+
+  .results h1 {
+    font-size: 30px;
+  }
+
+  .vehicle {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    gap: 16px;
+  }
+
+  .description-vehicle {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .container-img {
+    width: 100%;
+  }
+
+  .container-img img {
+    width: min(420px, 100%);
+    height: auto;
+    max-height: 180px;
+  }
+
+  .container-count {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .price {
+    width: 100%;
+    text-align: start;
+    align-items: flex-start;
+  }
+
+  .total-price {
+    justify-content: flex-start;
+  }
+
+  .container-count button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .results {
+    width: calc(100% - 20px);
+    padding: 52px 0;
+    gap: 22px;
+  }
+
+  .results h1 {
+    font-size: 26px;
+  }
+
+  .tittle-vehicle h3 {
+    font-size: 18px;
+  }
+
+  .total-price p {
+    font-size: 18px;
+  }
+
+  .fee {
+    width: auto;
+  }
+
+  .container-count {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .results {
+    width: calc(100% - 18px);
+    padding: 46px 0;
+    gap: 18px;
+  }
+
+  .results h1 {
+    font-size: 23px;
+  }
+
+  .tittle-vehicle p {
+    font-size: 11px;
+  }
+
+  .fee-day,
+  .price sub {
+    font-size: 10.5px;
+  }
+
+  .container-count button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .results h1 {
+    font-size: 21px;
+  }
+
+  .tittle-vehicle h3 {
+    font-size: 17px;
+  }
+
+  .total-price p {
+    font-size: 17px;
+  }
+
+  .container-img img {
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .results {
+    width: calc(100% - 16px);
+  }
+
+  .results h1 {
+    font-size: 20px;
+  }
+
+  .container-count button {
+    padding: 11px;
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .results {
+    width: calc(100% - 14px);
+  }
+
+  .results h1 {
+    font-size: 19px;
+  }
+
+  .container-img img {
+    max-height: 150px;
+  }
+}
+
