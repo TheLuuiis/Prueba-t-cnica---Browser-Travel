@@ -22,9 +22,11 @@ export default function Results() {
   if (error) return <p>{error}</p>;
 
   return (
-    <main>
-      <h1>Resultados</h1>
-      <VehicleList vehicles={list} />
-    </main>
+    <div className="container-results">
+      <div className="results">
+        <h1>Resultados de vehículos</h1>
+        <VehicleList vehicles={list} />
+      </div>
+    </div>
   );
 }

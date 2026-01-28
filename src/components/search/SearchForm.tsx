@@ -9,17 +9,22 @@ export const SearchForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="city">Ciudad o aeropuerto</label>
-      <input id="city" required />
-
-      <label htmlFor="pickup">Fecha de recogida</label>
-      <input id="pickup" type="date" required />
-
-      <label htmlFor="return">Fecha de devolución</label>
-      <input id="return" type="date" required />
-
-      <button type="submit">Buscar</button>
-    </form>
+    <div className="container-form">
+      <form onSubmit={handleSubmit}>
+        <div className="input search">
+          <label htmlFor="city">Ciudad o aeropuerto</label>
+          <input id="city" required />
+        </div>
+        <div className="input">
+          <label htmlFor="pickup">Fecha de recogida</label>
+          <input id="pickup" type="date" required />
+        </div>
+        <div className="input">
+          <label htmlFor="return">Fecha de devolución</label>
+          <input id="return" type="date" required />
+        </div>
+          <button type="submit">Buscar</button>
+      </form>
+    </div>
   );
 };

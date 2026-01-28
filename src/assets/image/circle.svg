@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" viewBox="0 0 121 121">
+  <g id="circle-M" transform="translate(-908 -143)">
+    <rect id="Rectángulo_5509" data-name="Rectángulo 5509" width="121" height="121" transform="translate(908 143)" fill="none"/>
+    <g id="circles">
+      <g id="Elipse_302" data-name="Elipse 302" transform="translate(920 160)" fill="none" stroke="#00e55e" stroke-width="3" stroke-dasharray="6">
+        <circle cx="48" cy="48" r="48" stroke="none"/>
+        <circle cx="48" cy="48" r="46.5" fill="none"/>
+      </g>
+      <circle id="Elipse_306" data-name="Elipse 306" cx="19" cy="19" r="19" transform="translate(978 151)" fill="#00e55e"/>
+    </g>
+  </g>
+</svg>

@@ -1,12 +1,13 @@
 import { Vehicle } from "@/types/vehicle";
+import { v4 as uuidv4 } from 'uuid';
 
 export const getVehiclesMock = async (): Promise<Vehicle[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([
-        { id: "1", name: "Toyota Corolla", price: 120 },
-        { id: "2", name: "Mazda CX-5", price: 180 },
-        { id: "3", name: "Chevrolet Spark", price: 90 },
+        { id: uuidv4(), name: "FORD Focus", price: 174.196 },
+        { id: uuidv4(), name: "FORD Escape", price: 181.708 },
+        { id: uuidv4(), name: "CHEVROLET Suburban", price: 206.606 },
       ]);
     }, 800);
   });
