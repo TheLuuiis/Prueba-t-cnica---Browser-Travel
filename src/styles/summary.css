@@ -51,13 +51,11 @@ body {
 .summary p {
   margin: 0;
   padding: 14px 14px;
-
   background: #ffffff;
   border: 1px solid rgba(108, 66, 249, 0.14);
   border-radius: 12px;
-
   color: #20293d;
-  font-size: 15px;
+  font-size: 16.6px;
   line-height: 1.35;
 }
 
@@ -65,7 +63,6 @@ body {
   margin-top: 12px;
 }
 
-/* Resalta el "Precio final" (último <p>) */
 .summary p:last-of-type {
   background: linear-gradient(
     90deg,
