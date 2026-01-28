@@ -8,6 +8,22 @@ interface Props {
   vehicle: Vehicle;
 }
 
+const vehicleImageByBrand: Record<string, string> = {
+  ifar: "/ifar.webp",
+  ford: "/ford.webp",
+  chevrolet: "/chevrolet.webp",
+};
+
+function getVehicleImage(name: string) {
+  const normalized = name.trim().toLowerCase();
+
+  if (normalized.includes("escape")) return vehicleImageByBrand.ifar; // o la que quieras para Escape
+  if (normalized.includes("ford")) return vehicleImageByBrand.ford;
+  if (normalized.includes("chevrolet")) return vehicleImageByBrand.chevrolet;
+
+  return vehicleImageByBrand.ifar;
+}
+
 export const VehicleCard = ({ vehicle }: Props) => {
   const dispatch = useAppDispatch();
   const router = useRouter();
@@ -22,30 +38,28 @@ export const VehicleCard = ({ vehicle }: Props) => {
       <div className="vehicle">
         <div className="description-vehicle">
           <Image
-            src="/ford.webp"
-            alt="circle"
+            src={getVehicleImage(vehicle.name)}
+            alt={vehicle.name}
             width={300.44}
             height={153.41}
-            priority             
+            priority
           />
           <div className="tittle-vehicle">
             <h3>{vehicle.name}</h3>
             <p>Compacto</p>
           </div>
         </div>
+
         <div className="container-count">
           <div className="price">
             <sub>COP $1.266.829</sub>
             <div className="total-price">
-              <div className="fee">
-                Tarifa diaría
-              </div>
+              <div className="fee">Tarifa diaría</div>
               <p>COP: ${vehicle.price}</p>
             </div>
-            <div className="fee-day">
-              Tarifa por 4 día(s) COP $696.750
-            </div>
+            <div className="fee-day">Tarifa por 4 día(s) COP $696.750</div>
           </div>
+
           <button onClick={handleSelect}>Seleccionar</button>
         </div>
       </div>
