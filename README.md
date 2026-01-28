@@ -2,6 +2,9 @@
 
 Aplicación web construida con Next.js para búsqueda, listado y resumen de reserva de vehículos, con diseño responsive y arquitectura preparada para integrarse con un backend y una pasarela de pago.
 
+## Link de la web
+Link: https://prueba-t-cnica-browser-travel.vercel.app/
+
 ## Requisitos
 - Node.js 18+ (recomendado)
 - npm / yarn / pnpm
