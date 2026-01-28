@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system;
+}
+
+/* Summary UI (card) */
+.container-summary {
+  width: 100%;
+  min-height: calc(100dvh - var(--header-height));
+  padding: 48px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* Fondo suave para que la card destaque */
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(108, 66, 249, 0.12), transparent 60%),
+    radial-gradient(1000px 500px at 90% 10%, rgba(0, 214, 89, 0.10), transparent 55%),
+    #f6f7fb;
+}
+
+.summary {
+  width: 100%;
+  max-width: 560px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(20, 27, 77, 0.12);
+  border-radius: 18px;
+
+  padding: 24px;
+  box-shadow:
+    0 18px 50px rgba(20, 27, 77, 0.12),
+    0 2px 8px rgba(20, 27, 77, 0.06);
+
+  backdrop-filter: blur(10px);
+}
+
+.summary h1 {
+  margin: 0 0 18px;
+  color: #141b4d;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.summary p {
+  margin: 0;
+  padding: 14px 14px;
+
+  background: #ffffff;
+  border: 1px solid rgba(108, 66, 249, 0.14);
+  border-radius: 12px;
+
+  color: #20293d;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.summary p + p {
+  margin-top: 12px;
+}
+
+/* Resalta el "Precio final" (último <p>) */
+.summary p:last-of-type {
+  background: linear-gradient(
+    90deg,
+    rgba(108, 66, 249, 0.14),
+    rgba(0, 214, 89, 0.10)
+  );
+  border-color: rgba(108, 66, 249, 0.26);
+  color: #141b4d;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .container-summary {
+    padding: 28px 12px;
+  }
+
+  .summary {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .summary h1 {
+    font-size: 24px;
+  }
+}

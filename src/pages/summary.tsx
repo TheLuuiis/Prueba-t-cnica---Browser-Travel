@@ -13,10 +13,12 @@ export default function Summary() {
   if (!selected) return null;
 
   return (
-    <main>
-      <h1>Resumen</h1>
-      <p>Vehículo: {selected.name}</p>
-      <p>Precio final: ${selected.price}</p>
-    </main>
+    <div className="container-summary">
+      <div className="summary">
+        <h1>Resumen</h1>
+        <p>Vehículo: {selected.name}</p>
+        <p>Precio final: ${selected.price}</p>
+      </div>
+    </div>
   );
 }
